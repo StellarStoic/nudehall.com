@@ -1,0 +1,47 @@
+
+body, html {
+  height: 100%
+}
+
+.bg {
+  /* The image used - Photo by John Rocha from Pexels */
+  background-image: url("pics/Desktop_pexels-john-rocha-230986.jpg");
+
+  /* Full height */
+  height: 100%;
+  margin: 0%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+p {
+  position: absolute;
+  color: bisque;
+  margin-top: 10%;
+  margin-left: 3%;
+  font-family: 'Arima Madurai', cursive ;
+  font-weight: 100;
+  text-align: center;
+  font-size: 2vw;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(100deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 83%;
+  animation: animate 6.5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
